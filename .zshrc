@@ -1,0 +1,1 @@
+/home/kalebo/.zprezto/runcoms/zshrc

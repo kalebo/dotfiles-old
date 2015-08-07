@@ -11,6 +11,10 @@ fi
 
 # Customize to your needs...
 
+## Personal exports
+VISUAL='emacs'; export VISUAL
+EDITOR='emacs'; export EDITOR
+
 ## Personal aliases
 
 # alias kj='gvim /tmp/jrnl' 
@@ -21,14 +25,11 @@ fi
 
 alias emc='emacsclient -c'
 alias emt='emacsclient -t'
-
-
-
+alias emw='emacsclient'
 
 ## Personal functions
 
 wcd() {latexmk -pvc -pdf "$*"}
-
 
 # zstyle ':prezto:load' pmodule \
 #   'environment' \

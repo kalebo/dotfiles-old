@@ -11,10 +11,6 @@ fi
 
 # Customize to your needs...
 
-## Personal exports
-VISUAL='emacs'; export VISUAL
-EDITOR='emacs'; export EDITOR
-
 ## Personal aliases
 
 # alias kj='gvim /tmp/jrnl' 

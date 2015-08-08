@@ -65,3 +65,4 @@ URxvt.background: rgba:1111/1111/1111/dddd
 ! URxvt*.shading: 40
 
 URxvt.scrollBar: false
+URxvt.font: xft:Inconsolata for Powerline:size=10

@@ -19,12 +19,12 @@ fi
 # alias kj-dl=' rsync -v olson@ko.bd.to:/home/olson/journal/journal.txt /home/kaleb/journal/journal.txt' 
 # alias pi='mosh olson@pi --ssh="ssh -p 56777" -- tmux a'
 
-alias emc='emacsclient -c'
 alias emt='emacsclient -t'
-alias emw='emacsclient'
 
 ## Personal functions
 
+emc() {emacsclient -c "$*" & disown}
+emw() {emacsclient "$*" & disown}
 wcd() {latexmk -pvc -pdf "$*"}
 
 # zstyle ':prezto:load' pmodule \

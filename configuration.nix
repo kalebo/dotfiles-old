@@ -53,10 +53,15 @@ nixpkgs.config = {
    trayer
    clipit
    ranger
+   powerline-fonts
+
+   # EXTRA
+   xdotool
 
    # BASIC
    firefoxWrapper
    zathura
+   weechat
    #chromium
    mpv
 
@@ -81,7 +86,6 @@ nixpkgs.config = {
    # SYSTEM
    git zsh tmux htop sudo mtr nmap git subversion wget openssh cifs_utils
    mesa_drivers mesa_noglu
-   cups
 
    # KDE GUI
    quassel_qt5
@@ -94,11 +98,17 @@ nixpkgs.config = {
 
  ]; # ++ builtins.filter stdenv.lib.isDerivation (builtins.attrValues kdeApps_stable);
 
+  environment.variables.PANEL_FIFO = "/tmp/panel-fifo";
+
   # List services that you want to enable:
 
+  hardware.pulseaudio.enable = true;
   services.virtualboxGuest.enable = true;
   services.openssh.enable = true;
-  services.printing.enable = true;
+  services.printing = {
+      enable = true;
+      drivers = [ pkgs.gutenprint ];
+  };
 
   systemd.user.services.emacs = {
   description = "Emacs Daemon";

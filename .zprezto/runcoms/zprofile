@@ -34,7 +34,7 @@ fi
 #
 
 export SHELL="/run/current-system/sw/bin/zsh"
-export PANEL_FIFO="/tmp/panel-fifo"
+# export PANEL_FIFO="/tmp/panel-fifo"
 export PATH=$PATH:/home/kalebo/bin
 
 # Ensure path arrays do not contain duplicates.

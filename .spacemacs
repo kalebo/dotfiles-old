@@ -20,6 +20,6 @@ This function is called at the very end of Spacemacs initialization."
   (setq-default evil-escape-key-sequence "ii")
   (setq-default evil-escape-delay 0.2)
 ;; List of configuration layers to load.
-(setq-default dotspacemacs-configuration-layers '(latex go php))
+(setq-default dotspacemacs-configuration-layers '(slime latex go php))
   )
 
